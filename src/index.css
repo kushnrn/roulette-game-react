@@ -1,0 +1,174 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background: LightSteelBlue;
+}
+
+.buttons-field {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#input-field {
+margin-top: 10px;
+}
+
+ #game-attempts {
+  color: #DF362D;
+ }
+
+ #game-prize {
+  font-style: bold;
+  color: #198753;
+ }
+
+#text-field {
+  margin-top: 10px;
+}
+
+.fortune-wheel {
+  margin: 8% auto;
+  align-items: center;
+  display: flex;
+  height: 50%;
+  width: 50%;
+  justify-content: center;
+}
+
+.cn-wrapper {
+  border: white 2px solid;
+  border-radius: 50%;
+  height: 20em;
+  overflow: hidden;
+  position: relative;
+  width: 20em;
+}
+.shadow {
+  position: absolute;
+  box-shadow: inset 3px 8px rgba(0, 0, 0, 0.5), 3px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.center {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin: 7.5em;
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+  background: white;
+  z-index: 10;
+  box-shadow: 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+#number-to-guess {
+  color: #DF362D;
+}
+
+.cn-wrapper li {
+  background: #eee;
+  position: absolute;
+  top: -2em;
+  left: -2em;
+  width: 12em;
+  height: 12em;
+  transform: skew(30deg);
+  transform-origin: 100% 100%;
+}
+.cn-wrapper li a {
+  position: absolute;
+  height: 10em;
+  width: 10em;
+  bottom: 0;
+  right: 0;
+}
+.cn-wrapper li:first-child {
+  transform: rotate(0deg) skew(60deg);
+}
+.cn-wrapper li:first-child a {
+  background: navy;
+}
+.cn-wrapper li:nth-child(2) {
+  transform: rotate(30deg) skew(60deg);
+}
+.cn-wrapper li:nth-child(2) a {
+  background: steelblue;
+}
+.cn-wrapper li:nth-child(3) {
+  transform: rotate(60deg) skew(60deg);
+}
+.cn-wrapper li:nth-child(3) a {
+  background: skyblue;
+}
+.cn-wrapper li:nth-child(4) {
+  transform: rotate(90deg) skew(60deg);
+}
+.cn-wrapper li:nth-child(4) a {
+  background: #FFD53D;
+}
+.cn-wrapper li:nth-child(5) {
+  transform: rotate(120deg) skew(60deg);
+}
+.cn-wrapper li:nth-child(5) a {
+  background: navy;
+}
+.cn-wrapper li:nth-child(6) {
+  transform: rotate(150deg) skew(60deg);
+}
+.cn-wrapper li:nth-child(6) a {
+  background: steelblue;
+}
+.cn-wrapper li:nth-child(7) {
+  transform: rotate(180deg) skew(60deg);
+}
+.cn-wrapper li:nth-child(7) a {
+  background: skyblue;
+}
+.cn-wrapper li:nth-child(8) {
+  transform: rotate(210deg) skew(60deg);
+}
+.cn-wrapper li:nth-child(8) a {
+  background: #FFD53D;
+}
+.cn-wrapper li:nth-child(9) {
+  transform: rotate(240deg) skew(60deg);
+}
+.cn-wrapper li:nth-child(9) a {
+  background: navy;
+}
+.cn-wrapper li:nth-child(10) {
+  transform: rotate(270deg) skew(60deg);
+}
+.cn-wrapper li:nth-child(10) a {
+  background: steelblue;
+}
+.cn-wrapper li:nth-child(11) {
+  transform: rotate(300deg) skew(60deg);
+}
+.cn-wrapper li:nth-child(11) a {
+  background: skyblue;
+}
+.cn-wrapper li:nth-child(12) {
+  transform: rotate(330deg) skew(60deg);
+}
+.cn-wrapper li:nth-child(12) a {
+  background: #FFD53D;
+}
+@keyframes rotate_wheel {
+  to {
+    transform: rotate(360deg);
+ }
+}
+.turn {
+  transform-origin: center center;
+  background: transparent;
+  animation-name: rotate_wheel;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
